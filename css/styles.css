@@ -5,21 +5,21 @@
 
 			body{ 
 				background-color: #343434;
-				font-family: 'Satisfy', cursive;
+				
 			}
 
 			.body-child{
-				padding-left: 140px !important;
-				padding-right: 140px !important;
-				padding: 16px;
-				margin: 16px;
+				margin-left: 60px !important;
+				margin-right: 60px !important;
+				/*padding: 16px;*/
+				/*margin: 16px;*/
 			}
 
 			.body-child:hover{/* hover selektor lässt sich nicht nur mit a container verwenden*/
 				background-color: white;
-				padding-left: 140px !important;
-				padding-right: 140px !important;
-				padding: 20px;
+				/*padding-left: 60px !important;
+				padding-right: 60px !important;
+				padding: 20px;*/
 			}
 
 			.bg1{/*benutzt bei jeder zweite body-child container*/
@@ -29,12 +29,23 @@
 			.bg2{/*benutzt bei jeder zweite body-child container*/
 				background-color: #abd9b6;
 			}
+			
+			.text{
+			  padding: 16px;
+			  font-family: 'Satisfy', cursive;
+			  font-size: 1em;
+			}
+			
+			.map{
+			  width: 100%;
+			  height: 400px;
+			}
 
 			.menu{
 				position: fixed;
 				top: 0px;
-				right: 0px;
-				left: 0px;
+				right: 60px; /*same as body-child*/
+				left: 60px; /*same as body-child*/
 				padding: 10px;
 				background-color: rgba(0, 0, 0, 0.5);
 			}
@@ -43,6 +54,8 @@
 				color: white;
 				font-size: 20px;
 				text-decoration: none; /* keine Decoration haben. */
+				margin-left: 6px;
+				margin-right: 6px;
 			}
 
 			.menu a:hover { /* ändert das "a" element die zu container class menu gehört wenn man die Mouse über das element platziert*/
@@ -52,34 +65,18 @@
 
 			.restaurantBild{
 				width: 100%;
-				height: 200px;
+				height: 400px;
 				object-fit: cover;
-			}
-
-			#relevant-info{
-				display: flex;
-				justify-content: space-between;
-			}
-
-			.info-child{
-				width: 60%;
-			}
-
-			#reachable-info{
-				width: 25%;
-				display: flex;
-				flex-direction:column;
-				justify-content: space-around;
 			}
 
 			#interesting-topics{
 				display: flex;
-				justify-content: space-between;
+				justify-content: space-around;
 			}
 
 			#interesting-topics iframe{
 				width: 100%;
-				height: fit;
+				height: 600px;
 			}
 
 			#bottom{
