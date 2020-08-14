@@ -10,8 +10,8 @@ body {
 .body-child {
 	margin-left: 10px !important;
 	margin-right: 10px !important;
-	min-width: 500px;
-	overflow: hidden;
+	/*min-width: 500px;
+	overflow: hidden;*/
 	/*padding: 16px;*/
 	/*margin: 16px;*/
 }
@@ -54,8 +54,8 @@ body {
 	/*same as body-child*/
 	padding: 10px;
 	background-color: rgba(0, 0, 0, 0.5);
-	min-width: 500px;
-	overflow: hidden;
+	/*min-width: 500px;
+	overflow: hidden;*/
 }
 
 .menu a {
