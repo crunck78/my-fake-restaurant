@@ -8,8 +8,10 @@ body {
 }
 
 .body-child {
-	margin-left: 60px !important;
-	margin-right: 60px !important;
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+	min-width: 500px;
+	overflow: hidden;
 	/*padding: 16px;*/
 	/*margin: 16px;*/
 }
@@ -18,8 +20,8 @@ body {
 	/* hover selektor lässt sich nicht nur mit a container verwenden*/
 	background-color: white;
 	/*padding-left: 60px !important;
-				padding-right: 60px !important;
-				padding: 20px;*/
+	padding-right: 60px !important;
+	padding: 20px;*/
 }
 
 .bg1 {
@@ -46,12 +48,14 @@ body {
 .menu {
 	position: fixed;
 	top: 0px;
-	right: 60px;
+	right: 10px;
 	/*same as body-child*/
-	left: 60px;
+	left: 10px;
 	/*same as body-child*/
 	padding: 10px;
 	background-color: rgba(0, 0, 0, 0.5);
+	min-width: 500px;
+	overflow: hidden;
 }
 
 .menu a {
@@ -67,23 +71,33 @@ body {
 .menu a:hover {
 	/* ändert das "a" element die zu container class menu gehört wenn man die Mouse über das element platziert*/
 	text-decoration: underline;
-	color: blue;
 }
 
 .restaurantBild {
 	width: 100%;
-	height: 400px;
+	height: 250px;
 	object-fit: cover;
+}
+
+#info{
+	display: flex;
+	justify-content: space-between;
+}
+
+.topic-child{
+	width: 96%;
 }
 
 #interesting-topics {
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
 #interesting-topics iframe {
 	width: 100%;
-	height: 600px;
+	height: 400px;
 }
 
 #bottom {
@@ -91,13 +105,23 @@ body {
 }
 
 .footer {
-	padding: 40px;
+	padding: 10px;
 	display: flex;
 	justify-content: space-between;
 	/*erstellt der freie Platz scwischen die Elemente die zu dem Container footer gehören*/
 }
 
 .footer-child {
-	width: 30%;
+	display: flex;
+	flex-direction: column;
 	color: white;
+}
+
+.footer-child a{
+	text-decoration: none;
+	color: white;
+}
+
+.footer-child a:hover{
+	text-decoration: underline;
 }
