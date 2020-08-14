@@ -36,8 +36,9 @@ body {
 
 .text {
 	padding: 16px;
-	font-family: 'Satisfy', cursive;
-	font-size: 1em;
+	/*font-family: 'Satisfy', cursive;
+	font-size: 1em;*/
+	font-family: 'Baloo Tamma 2', cursive;
 }
 
 .map {
