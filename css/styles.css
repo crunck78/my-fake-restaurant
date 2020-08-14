@@ -1,96 +1,103 @@
+html {
+	scroll-behavior: smooth;
+}
 
-			html{
-				scroll-behavior: smooth;
-			}
+body {
+	background-color: #343434;
+	margin: 0;
+}
 
-			body{ 
-				background-color: #343434;
-				
-			}
+.body-child {
+	margin-left: 60px !important;
+	margin-right: 60px !important;
+	/*padding: 16px;*/
+	/*margin: 16px;*/
+}
 
-			.body-child{
-				margin-left: 60px !important;
-				margin-right: 60px !important;
-				/*padding: 16px;*/
-				/*margin: 16px;*/
-			}
-
-			.body-child:hover{/* hover selektor lässt sich nicht nur mit a container verwenden*/
-				background-color: white;
-				/*padding-left: 60px !important;
+.body-child:hover {
+	/* hover selektor lässt sich nicht nur mit a container verwenden*/
+	background-color: white;
+	/*padding-left: 60px !important;
 				padding-right: 60px !important;
 				padding: 20px;*/
-			}
+}
 
-			.bg1{/*benutzt bei jeder zweite body-child container*/
-				background-color: #a0aaba;
-			}
+.bg1 {
+	/*benutzt bei jeder zweite body-child container*/
+	background-color: #a0aaba;
+}
 
-			.bg2{/*benutzt bei jeder zweite body-child container*/
-				background-color: #abd9b6;
-			}
-			
-			.text{
-			  padding: 16px;
-			  font-family: 'Satisfy', cursive;
-			  font-size: 1em;
-			}
-			
-			.map{
-			  width: 100%;
-			  height: 400px;
-			}
+.bg2 {
+	/*benutzt bei jeder zweite body-child container*/
+	background-color: #abd9b6;
+}
 
-			.menu{
-				position: fixed;
-				top: 0px;
-				right: 60px; /*same as body-child*/
-				left: 60px; /*same as body-child*/
-				padding: 10px;
-				background-color: rgba(0, 0, 0, 0.5);
-			}
-			
-			.menu a{ /*ändert alle "a" elemente die zu container class menu gehören*/
-				color: white;
-				font-size: 20px;
-				text-decoration: none; /* keine Decoration haben. */
-				margin-left: 6px;
-				margin-right: 6px;
-			}
+.text {
+	padding: 16px;
+	font-family: 'Satisfy', cursive;
+	font-size: 1em;
+}
 
-			.menu a:hover { /* ändert das "a" element die zu container class menu gehört wenn man die Mouse über das element platziert*/
-				text-decoration: underline;
-				color: blue;
-			}
+.map {
+	width: 100%;
+	height: 400px;
+}
 
-			.restaurantBild{
-				width: 100%;
-				height: 400px;
-				object-fit: cover;
-			}
+.menu {
+	position: fixed;
+	top: 0px;
+	right: 60px;
+	/*same as body-child*/
+	left: 60px;
+	/*same as body-child*/
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
 
-			#interesting-topics{
-				display: flex;
-				justify-content: space-around;
-			}
+.menu a {
+	/*ändert alle "a" elemente die zu container class menu gehören*/
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	/* keine Decoration haben. */
+	margin-left: 6px;
+	margin-right: 6px;
+}
 
-			#interesting-topics iframe{
-				width: 100%;
-				height: 600px;
-			}
+.menu a:hover {
+	/* ändert das "a" element die zu container class menu gehört wenn man die Mouse über das element platziert*/
+	text-decoration: underline;
+	color: blue;
+}
 
-			#bottom{
-				background-color: #545454;
-			}
-				
-			.footer {
-			  padding: 40px;
-			  display: flex;
-			  justify-content: space-between;/*erstellt der freie Platz scwischen die Elemente die zu dem Container footer gehören*/
-			}
+.restaurantBild {
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+}
 
-			.footer-child{
-				width: 30%;
-				color: white;
-			}
-			
+#interesting-topics {
+	display: flex;
+	justify-content: space-around;
+}
+
+#interesting-topics iframe {
+	width: 100%;
+	height: 600px;
+}
+
+#bottom {
+	background-color: #545454;
+}
+
+.footer {
+	padding: 40px;
+	display: flex;
+	justify-content: space-between;
+	/*erstellt der freie Platz scwischen die Elemente die zu dem Container footer gehören*/
+}
+
+.footer-child {
+	width: 30%;
+	color: white;
+}
