@@ -90,18 +90,35 @@ body {
 	justify-content: space-between;
 }
 
-.topic-child{
-	width: 50%;
+.topic-child iframe{
+	width: 100%;
 }
 
 #interesting-topics {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: top;
 }
 
-#interesting-topics iframe {
+/*#interesting-topics iframe {
+	
+}*/
+
+#was-die-zukunft-bringt{
+	width: 40%;
+}
+
+#was-die-zukunft-bringt iframe{
+	width: 100%;
+	height: 400px;
+}
+
+
+#advertising{
+	width: 60%;
+}
+
+#advertising iframe{
 	width: 100%;
 	height: 800px;
 }
@@ -140,12 +157,11 @@ body {
 	}
 
 	.topic-child{
-		width: 80%;
+		width: 80% !important;
 	}
 
-	#interesting-topics iframe{
+	.topic-child iframe{
 		width: 100%;
-		height: 400px;
 	}
 
 	.map{
