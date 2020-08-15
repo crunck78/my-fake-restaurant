@@ -185,3 +185,16 @@ body {
 		width: 100%;
 	}
 }
+
+@media(max-width: 500px){
+	.footer{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer-child{
+		text-align: center;
+	}
+}

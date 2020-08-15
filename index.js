@@ -40,7 +40,7 @@ let products = [
 
 function generateProduct(product) {
     return `
-    <p id="name-price">${product.id} ${product.name} ${product.price} ${product.description}</p>
+    <p id="name-price">${product.id}. ${product.name} ${product.price} - ${product.description}</p>
     `;
 }
 
