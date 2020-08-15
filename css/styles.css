@@ -41,13 +41,17 @@ body {
 	font-family: 'Baloo Tamma 2', cursive;
 }
 
+#Anfahrt p{
+	width: 40%;
+}
+
 .map {
-	width: 100%;
+	width: 40%;
 	height: 400px;
 }
 
 .menu {
-	position: fixed;
+	position: absolute;
 	top: 0px;
 	right: 10px;
 	/*same as body-child*/
@@ -82,23 +86,24 @@ body {
 
 #info{
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 }
 
 .topic-child{
-	width: 96%;
+	width: 50%;
 }
 
 #interesting-topics {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+	align-items: top;
 }
 
 #interesting-topics iframe {
 	width: 100%;
-	height: 400px;
+	height: 800px;
 }
 
 #bottom {
@@ -125,4 +130,42 @@ body {
 
 .footer-child a:hover{
 	text-decoration: underline;
+}
+
+@media(max-width: 1024px){
+	#interesting-topics {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.topic-child{
+		width: 80%;
+	}
+
+	#interesting-topics iframe{
+		width: 100%;
+		height: 400px;
+	}
+
+	.map{
+		width: 50%;
+		height: 400px;
+	}
+
+	#Anfahrt p{
+		width: 50%;
+	}
+}
+
+@media(max-width: 768px){
+
+	.map{
+		width: 100%;
+		height: 400px;
+	}
+
+	#Anfahrt p{
+		width: 100%;
+	}
 }
