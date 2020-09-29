@@ -7,7 +7,7 @@ body {
 	margin: 0;
 }
 
-.d-none{
+.d-none {
 	display: none;
 }
 
@@ -42,10 +42,10 @@ body {
 	padding: 16px;
 	/*font-family: 'Satisfy', cursive;
 	font-size: 1em;*/
-	font-family: 'Baloo Tamma 2', cursive;
+	font-family: "Baloo Tamma 2", cursive;
 }
 
-#Anfahrt p{
+#Anfahrt p {
 	width: 40%;
 }
 
@@ -82,20 +82,13 @@ body {
 	text-decoration: underline;
 }
 
-.links-container{
+.menu-btn{
+	display: none;
+}
+
+.links-container {
 	display: flex;
 	justify-content: flex-start;
-}
-
-.menu-btn{
-	color: white;
-	width: fit-content;
-	font-size: 20px;
-}
-
-.menu-btn:hover{
-	text-decoration: underline;
-	cursor: pointer;
 }
 
 .restaurantBild {
@@ -104,13 +97,13 @@ body {
 	object-fit: cover;
 }
 
-#info{
+#info {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
-.topic-child iframe{
+.topic-child iframe {
 	width: 100%;
 }
 
@@ -124,21 +117,20 @@ body {
 	
 }*/
 
-#was-die-zukunft-bringt{
+#was-die-zukunft-bringt {
 	width: 40%;
 }
 
-#was-die-zukunft-bringt iframe{
+#was-die-zukunft-bringt iframe {
 	width: 100%;
 	height: 400px;
 }
 
-
-#advertising{
+#advertising {
 	width: 60%;
 }
 
-#advertising iframe{
+#advertising iframe {
 	width: 100%;
 	height: 800px;
 }
@@ -160,41 +152,41 @@ body {
 	color: white;
 }
 
-.footer-child a{
+.footer-child a {
 	text-decoration: none;
 	color: white;
 }
 
-.footer-child a:hover{
+.footer-child a:hover {
 	text-decoration: underline;
 }
 
-@media(max-width: 1024px){
+@media (max-width: 1024px) {
 	#interesting-topics {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 	}
 
-	.topic-child{
+	.topic-child {
 		width: 80% !important;
 	}
 
-	.topic-child iframe{
+	.topic-child iframe {
 		width: 100%;
 	}
 
-	.map{
+	.map {
 		width: 50%;
 		height: 400px;
 	}
 
-	#Anfahrt p{
+	#Anfahrt p {
 		width: 50%;
 	}
 }
 
-@media(max-width: 850px){
+@media (max-width: 850px) {
 	.menu a {
 		/*ändert alle "a" elemente die zu container class menu gehören*/
 		color: white;
@@ -206,37 +198,51 @@ body {
 	}
 }
 
-@media(max-width: 768px){
-
-	.map{
+@media (max-width: 768px) {
+	.map {
 		width: 100%;
 		height: 400px;
 	}
 
-	#Anfahrt p{
+	#Anfahrt p {
 		width: 100%;
 	}
 }
 
-@media(max-width: 660px){
-	.links-container{
-		display: flex;
+@media (max-width: 660px) {
+	.links-container {
+		display: none;
+		width: fit-content;
 		flex-direction: column;
 		justify-content: flex-start;
 	}
 
-	
+	.menu-btn {
+		display: block;
+		color: white;
+		width: fit-content;
+		font-size: 20px;
+	}
+
+	.menu-btn:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.menu:hover .links-container {
+		display: flex;
+	}
 }
 
-@media(max-width: 500px){
-	.footer{
+@media (max-width: 500px) {
+	.footer {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
 
-	.footer-child{
+	.footer-child {
 		text-align: center;
 	}
 }
