@@ -110,6 +110,7 @@ iframe{
 
 #bottom {
 	background-color: var(--footer-color);
+	margin-bottom: 0 !important;
 }
 
 .footer {
