@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> Mein Fake Restaurant - Rumänische Spezialitäten</title>
-	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;800&display=swap" rel="stylesheet">
 	<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e784f188-f1fd-444d-a5e3-4de2c0826115"
 		data-blockingmode="auto" type="text/javascript"></script>
@@ -12,9 +12,9 @@
 </head>
 
 <body>
-
-	<div class="menu text">
-		<div class="menu-btn text">
+	<!--Navigation-->
+	<div id="navigation" class="menu body-child">
+		<div class="menu-btn ">
 			Menu
 		</div>
 		<div class="links-container">
@@ -22,15 +22,17 @@
 			<a href="#tageskarte">Tageskarte</a>
 			<a href="#öffnungszeiten">Öffnungszeiten</a>
 			<a href="#kontakt">Kontakt</a>
-			<a href="#Anfahrt" title="Hier findest du die Adresse">Anfahrt</a>
+			<a href="#anfahrt" title="Hier findest du die Adresse">Anfahrt</a>
 			<a href="#interesting-topics">Interessante Themen</a>
 		</div>
 	</div>
+	<!--Navigation End-->
+
 	<!--Intro Container-->
 	<div id="intro" class="bg1 body-child">
 		<img class="restaurantBild" src="img/restaurant1.jpg">
 
-		<div class="text">
+		<div class="">
 			<h1>Herzlich willkommen</h1>
 			<p>In unserem Restaurant findest du <i>traditionalle rumänische Spezialitäten</i>.</p>
 		</div>
@@ -38,23 +40,38 @@
 	<!--Intro Container End-->
 
 	<!--TagesKarte Container-->
-	<div id="tageskarte" class="text bg2 body-child">
-		<h2>Tageskarte</h2>
+	<div id="tageskarte" class=" bg2 body-child">
+		<table>
+			<thead>
+				<h2>Tageskarte</h2>
+				<tr>
+					<td><b>Nr.</b></td>
+					<td><b>Name</b></td>
+					<td><b>Price</b></td>
+					<td><b>Details</b></td>
+				</tr>
+			</thead>
+			<tbody id="list">
+				<!--Generated HTML-->
+			</tbody>
+		</table>
+		<!-- <h2>Tageskarte</h2> -->
 
-		<div id="list"></div>
+		<!-- <ul id="list"></ul> -->
 
 		<p>Öffnen Sie unsere Tageskarte als <a href="downloads/Tageskarte.pdf" target="_blank">PDF</a></p>
 	</div>
 	<!--Tageskarte Container End-->
 
 	<!--Anfahrt Container-->
-	<div id="Anfahrt" class="bg1 body-child">
-		<div class="text">
+	<div id="anfahrt" class="bg1 body-child">
+		<div class="">
 			<h2>Anfahrt</h2>
 			<p>Unser Restaurant befindet sich in der <i>Gartenstraße 1999, 8767175 Gartenhaus.</i>
 				<u>Fahren Sie über die McDonalds und nehmen Sie die Ausfahrt in die Richtung <b><i>Gesund
 							Essen</i></b></u>.
-				Dort finden Sie unser schönes Restaurant.</p>
+				Dort finden Sie unser schönes Restaurant.
+			</p>
 		</div>
 		<iframe class="map"
 			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22745.45893387193!2d23.49653697366577!3d44.55237146242507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752ee40681225bf%3A0x164b0a8fa2f4ac9b!2zRmlsaWHImWksIFJ1bcOkbmllbg!5e0!3m2!1sde!2sde!4v1591989245074!5m2!1sde!2sde"
@@ -62,11 +79,10 @@
 	</div>
 	<!--Anfahrt Container End-->
 
-
-
+	<!--Programme Container-->
 	<div id="info" class="bg2 body-child">
 
-		<div id="öffnungszeiten" class="text">
+		<div id="öffnungszeiten" class="">
 			<h2>Unsere Öffnungszeiten</h2>
 			<table>
 				<tr>
@@ -84,30 +100,32 @@
 			</table>
 		</div>
 
-		<div id="kontakt" class="text">
+		<div id="kontakt" class="">
 			<h2>Kontakt</h2>
 			<p>Sie können uns gerne telefonisch oder per Email erreichen und einen Tisch reservieren.</p>
 			<p>Tel.: <a href="tel:+49(0)15733691523">+49(0)15733691523</a></p>
 			<p>E-mail: <a href="mailto:crunck78@googlemail.com">crunck78@googlemail.com</a></p>
 		</div>
+
 	</div>
+	<!--Programme Container End-->
 
 	<!--Interesting Topics Container-->
 	<div id="interesting-topics" class="bg1 body-child">
 
-		<div id="was-die-zukunft-bringt" class="text topic-child">
+		<div id="was-die-zukunft-bringt" class="topic-child">
 			<h2>Was die Zukunft bringt</h2>
 			<p>Eine interessante Zukunftsperspektive und eine neue Denkweise.</p>
 			<p>Präsentation von Jacque Fresco.</p>
-			<iframe src="https://www.youtube.com/embed/Fb_bTUJp39o" frameborder="0"
+			<iframe width="600" height="400" src="https://www.youtube.com/embed/Fb_bTUJp39o" frameborder="0"
 				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 				allowfullscreen></iframe>
 		</div>
 
-		<div id="advertising" class="text topic-child">
+		<div id="advertising" class="topic-child">
 			<h2>Werbung</h2>
 			<p>Diese Web-Seite wurde erstellt mit der Hilfe von DeveloperAkademie.</p>
-			<iframe src="https://developerakademie.com/"></iframe>
+			<iframe width="600" height="400" src="https://developerakademie.com/"></iframe>
 		</div>
 
 	</div>
@@ -121,11 +139,11 @@
 		<!--Footer Container-->
 		<div class="footer">
 
-			<div class="text footer-child">
+			<div class=" footer-child">
 				<p>Copyright 2020 - Mein fake Restaurant</p>
 			</div>
 
-			<div class="text footer-child">
+			<div class=" footer-child">
 
 				<a href="#">Impresumm</a>
 				<a href="#">Kontakt</a>

@@ -1,13 +1,23 @@
-import { products } from './products.js'
+import { Navi } from './navigation.js';
+import { products } from './products.js';
+
+const navBar = new Navi();
 
 function generateProduct(product) {
     return `
-    <p id="name-price">${product.id}. ${product.name} ${product.price} - ${product.description}</p>
+    <tr class="product">
+        <td>${product.id}</td>
+        <td>${product.name}</td>
+        <td>${product.price}</td>
+        <td>${product.description}</td>
+    </tr>
     `;
 }
 
-window.onload = function () {
+function showProducts() {
     products.forEach(product => {
         document.getElementById('list').insertAdjacentHTML("beforeend", generateProduct(product));
     });
 }
+
+showProducts();
