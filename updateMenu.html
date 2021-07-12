@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/updateMenu.css">
+    <script src="smallest_backend_ever/mini_backend.js"></script>
+    <script src="js/updateMenu.js"></script>
+</head>
+
+<body>
+
+    <!-- <div class="container">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" methode="post">
+            <label for="name">Name</label>
+            <input name="name" type="text">
+
+            <label for="price">Price</label>
+            <input name="price" type="number">
+
+            <label for="description">description</label>
+            <textarea name="description" type="text"></textarea>
+            <button type="Submit">Submit</button>
+        </form>
+    </div> -->
+
+    <!-- <?php
+     $string = file_get_contents("products.json");
+
+     if ($string === false) {
+         // deal with error...
+
+     }
+
+     $json_a = json_decode($string, true);
+     if ($json_a === null) {
+         // deal with error...
+     }
+
+     $produts = array($json_a["products"]);
+
+     echo $json_a["products"][0];
+     echo count($produts);
+    // define variables and set to empty values
+    $name = $description = $price = "";
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = test_input($_POST["name"]);
+        $description = test_input($_POST["description"]);
+        $price = test_input($_POST["price"]);
+    }
+
+    function test_input($data)
+    {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+    ?> -->
+</body>
+
+</html>

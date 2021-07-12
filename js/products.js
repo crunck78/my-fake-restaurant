@@ -35,5 +35,4 @@ export let products = [
         price: '4,67€',
         description: 'Mit gegrilltem Fleisch servieren'
     }
-
 ];

@@ -11,7 +11,7 @@ export class Navi {
         if(!this.isMobile){
             window.addEventListener("mousemove", this.handleMouseMove.bind(this));
         }else{
-           
+           //TODO
         }
     }
 

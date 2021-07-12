@@ -8,7 +8,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;800&display=swap" rel="stylesheet">
 	<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e784f188-f1fd-444d-a5e3-4de2c0826115"
 		data-blockingmode="auto" type="text/javascript"></script>
-	<script type="module" src="index.js"></script>
+
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/1.10.100/pdf.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.entry.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/1.10.100/pdf.worker.min.js"></script> -->
+	<script type="module" src="js/index.js"></script>
 </head>
 
 <body>
@@ -19,7 +23,7 @@
 		</div>
 		<div class="links-container">
 			<a href="#intro">Unser Restaurant</a>
-			<a href="#tageskarte">Tageskarte</a>
+			<a class="d-none" id="tageskarte-link" href="#tageskarte">Tageskarte</a>
 			<a href="#öffnungszeiten">Öffnungszeiten</a>
 			<a href="#kontakt">Kontakt</a>
 			<a href="#anfahrt" title="Hier findest du die Adresse">Anfahrt</a>
@@ -40,7 +44,7 @@
 	<!--Intro Container End-->
 
 	<!--TagesKarte Container-->
-	<div id="tageskarte" class=" bg2 body-child">
+	<div id="tageskarte" class="d-none bg2 body-child">
 		<table>
 			<thead>
 				<h2>Tageskarte</h2>
@@ -53,6 +57,7 @@
 			</thead>
 			<tbody id="list">
 				<!--Generated HTML-->
+				<!--generatedHTMLProduct(product);-->
 			</tbody>
 		</table>
 		<!-- <h2>Tageskarte</h2> -->
