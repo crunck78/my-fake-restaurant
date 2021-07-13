@@ -1,0 +1,57 @@
+:root{
+	--card-color: #F4F3FB;
+    --card-radius: 16px;
+    --card-padding: 32px;
+}
+
+.d-none{
+    display: none;
+}
+
+.fixed-elements-container{
+
+}
+
+.dialog{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+}
+
+.dialog-container{
+    /* background-color: var(--card-color); */
+    background-color: #F4F3FB;
+    padding: var(--card-padding);
+    border-radius: var(--card-radius);
+    /* flex-grow: 0.8; */
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.feedback-card{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    width: fit-content;
+    background-color: var(--card-color);
+    padding: var(--card-padding);
+    border-radius: var(--card-radius);
+    border: var(--fields-border-style);
+
+    /* transition: all 225ms ease-in-out; */
+    /* animation: showfeedback 225ms ease-in-out; */
+}

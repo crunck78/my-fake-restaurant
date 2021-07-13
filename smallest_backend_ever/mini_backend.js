@@ -3,6 +3,10 @@ export class Backend {
     static #base_server_url;
     static #jsonFromServer;
 
+    /**
+     * Sets the base url to smallest_backent_ever and loads the database.json to #jsonFromServer
+     * @param {string} url - base url path to smallest_backend_ever
+     */
     static async init(url) {
         Backend.#base_server_url = url;
         await Backend.#downloadFromServer();
@@ -57,7 +61,7 @@ export class Backend {
             };
 
             xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-            xhttp.send(JSON.stringify(jsonFromServer));
+            xhttp.send(JSON.stringify(Backend.#jsonFromServer));
 
         });
     }

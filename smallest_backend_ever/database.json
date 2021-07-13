@@ -1,5 +1,5 @@
 {
-    "products" : [
+    "products": [
         {
             "id": 1,
             "name": "Kohlroulade",
@@ -35,6 +35,12 @@
             "name": "Kartoffelpüree",
             "price": "4,67€",
             "description": "Mit gegrilltem Fleisch servieren"
+        },
+        {
+            "id": 7,
+            "name": "Sarmale",
+            "price": "20,0€",
+            "description": "Hackfleisch"
         }
     ]
 }

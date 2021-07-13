@@ -12,6 +12,10 @@
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/1.10.100/pdf.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.entry.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/1.10.100/pdf.worker.min.js"></script> -->
+
+	<link rel="stylesheet" href="css/overall.css">
+    <link rel="stylesheet" href="css/index.css"> 
+	
 	<script type="module" src="js/index.js"></script>
 </head>
 
@@ -43,30 +47,7 @@
 	</div>
 	<!--Intro Container End-->
 
-	<!--TagesKarte Container-->
-	<div id="tageskarte" class="d-none bg2 body-child">
-		<table>
-			<thead>
-				<h2>Tageskarte</h2>
-				<tr>
-					<td><b>Nr.</b></td>
-					<td><b>Name</b></td>
-					<td><b>Price</b></td>
-					<td><b>Details</b></td>
-				</tr>
-			</thead>
-			<tbody id="list">
-				<!--Generated HTML-->
-				<!--generatedHTMLProduct(product);-->
-			</tbody>
-		</table>
-		<!-- <h2>Tageskarte</h2> -->
-
-		<!-- <ul id="list"></ul> -->
-
-		<p>Öffnen Sie unsere Tageskarte als <a href="downloads/Tageskarte.pdf" target="_blank">PDF</a></p>
-	</div>
-	<!--Tageskarte Container End-->
+	<div w3-include-html="templates/tageskarte.html"></div>
 
 	<!--Anfahrt Container-->
 	<div id="anfahrt" class="bg1 body-child">
