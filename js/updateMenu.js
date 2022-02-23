@@ -5,15 +5,9 @@ import { Utility } from "./overall.js";
 /**
  * Page Set Up
  */
-Utility.includeHTML();
+await Utility.includeHTML2();
 await Backend.init( window.location.origin + '/smallest_backend_ever');
-
-let menuInitInterval = setInterval(()=>{
-    if(document.getElementById("list")){
-        Menu.init(Backend.getItem("products"), true);
-        clearInterval(menuInitInterval);
-    }
- }, 1000 / 60)
+Menu.init(Backend.getItem("products"), true);
 ////////////////////////////////////////////////////////////////////////
 
 // Utility.readFile('../downloads/Tageskarte.pdf');
@@ -23,7 +17,8 @@ let menuInitInterval = setInterval(()=>{
  */
 window.editProduct = Menu.editProduct;
 
-window.submitNewProduct = (event) =>{
+window.submitNewProduct = async (event) =>{
+    event.preventDefault();
     const form = event.target;
 
     const newProduct =
@@ -35,8 +30,7 @@ window.submitNewProduct = (event) =>{
     }
 
     Menu.addNewProduct( newProduct );
-    Backend.setItem("products", Menu.getProducts());
-    return false;
+    await Backend.setItem("products", Menu.getProducts());
 }
 
 window.addProduct = ()=>{

@@ -6,15 +6,10 @@ import { Utility } from "./overall.js";
 /**
  * Page Set Up
  */
- const navBar = new Navi();
-Utility.includeHTML();
- await Backend.init( window.location.origin + '/smallest_backend_ever');
- let menuInitInterval = setInterval(()=>{
-    if(document.getElementById("list")){
-        Menu.init(Backend.getItem("products"));
-        clearInterval(menuInitInterval);
-    }
- }, 1000 / 60)
+const navBar = new Navi();
+await Utility.includeHTML2();
+await Backend.init(window.location.origin + '/smallest_backend_ever');
+Menu.init(Backend.getItem("products"));
 
  ////////////////////////////////////////////////////////////////////////
 

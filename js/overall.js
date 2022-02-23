@@ -53,22 +53,33 @@ export class Utility {
     current.classList.add("current-link");
   }
 
+  static async asyncForEach(array, callback) {
+    for (let index = 0; index < array.length; index++) {
+      await callback(array[index], index, array);
+    }
+  }
+
   /**
-   * Includes templates
-   * @returns 
+   * Includes templates to innerHTML of all elements with data-template attribute
+   * @returns
    */
-  static includeHTML2() {
-    var z, i, elmnt, file, xhttp;
-    /* Loop through a collection of all HTML elements: */
-    z = Array.from(document.getElementsByTagName("*"));
-    const hasInclude = z.filter(elem => elem.hasAttribute("w3-include-html"));
-    hasInclude.forEach( async(include) => {
-      const file = include.getAttribute("w3-include-html");
-      const response = await fetch(file);
-      const content = await response.text();
-      include.innerHTML = content;
-      include.removeAttribute("w3-include-html");
-    });
+  static async includeHTML2() {
+    try {
+      const templatesContainer = document.querySelectorAll('[data-template]');
+      if(templatesContainer.length == 0)  return; //fall case
+      await Utility.asyncForEach(templatesContainer, async (container) => {
+        const file = container.getAttribute("data-template");
+        const response = await fetch(file);
+        if (response.ok) {
+          const content = await response.text();
+          container.innerHTML = content;
+        }
+        container.removeAttribute("data-template");
+      });
+      await Utility.includeHTML2();
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   /**
@@ -106,6 +117,6 @@ export class Utility {
 
 }
 
-class Dialog {
+// class Dialog {
 
-}
+// }
